@@ -1,0 +1,10 @@
+.ottoia
+/node_modules/
+/lib/
+/examples/
+/tests/
+*.wasm
+*.wat
+*.map
+*.d.ts
+typedoc-sidebar.json
