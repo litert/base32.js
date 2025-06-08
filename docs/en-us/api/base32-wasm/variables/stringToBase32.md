@@ -4,7 +4,7 @@
 
 > `const` **stringToBase32**: (`data`) => `string`
 
-Defined in: [base32-wasm.ts:139](https://github.com/litert/base32.js/blob/master/src/lib/base32-wasm.ts#L139)
+Defined in: [base32-wasm.ts:142](https://github.com/litert/base32.js/blob/master/src/lib/base32-wasm.ts#L142)
 
 Encode a UTF-8 string into a BASE32-encoded string.
 

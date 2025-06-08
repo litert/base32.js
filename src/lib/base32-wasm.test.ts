@@ -61,6 +61,12 @@ NodeTest.describe('WebAssembly Edition', async () => {
             NodeAssert.equal(WasmEnc.bufferFromBase32(encoded).toString(), origin);
         }
 
+        NodeAssert.equal(
+            WasmEnc.bufferFromBase32('B4PSUNCFJMQCUEBGEEFSYCTD')
+                .equals(Buffer.from('Dx8qNEVLICoQJiELLApj', 'base64url')),
+            true
+        );
+
         NodeAssert.throws(() => WasmEnc.bufferFromBase32('1'));
         NodeAssert.throws(() => WasmEnc.bufferFromBase32('12'));
         NodeAssert.throws(() => WasmEnc.bufferFromBase32('123'));

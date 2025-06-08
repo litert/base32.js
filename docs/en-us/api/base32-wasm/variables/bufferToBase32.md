@@ -4,7 +4,7 @@
 
 > `const` **bufferToBase32**: (`data`) => `string`
 
-Defined in: [base32-wasm.ts:166](https://github.com/litert/base32.js/blob/master/src/lib/base32-wasm.ts#L166)
+Defined in: [base32-wasm.ts:169](https://github.com/litert/base32.js/blob/master/src/lib/base32-wasm.ts#L169)
 
 Encode a `Buffer` to a BASE32-encoded string.
 

@@ -81,6 +81,12 @@ NodeTest.describe('Native JavaScript Edition', async () => {
             NodeAssert.strictEqual(JsEnc.bufferToBase32(d), base32);
             NodeAssert.strictEqual(JsEnc.bufferFromBase32(base32).equals(d), true);
         }
+        
+        NodeAssert.equal(
+            JsEnc.bufferFromBase32('B4PSUNCFJMQCUEBGEEFSYCTD')
+                .equals(Buffer.from('Dx8qNEVLICoQJiELLApj', 'base64url')),
+            true
+        );
 
         JsEnc.bufferFromBase32('abc23456'.repeat(65537));
     });
