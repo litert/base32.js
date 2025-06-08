@@ -6,10 +6,11 @@
   "typings": "lib/index.d.ts",
   "types": "lib/index.d.ts",
   "scripts": {
-    "prepublishOnly": "npm run build-wasm && npm run rebuild && npm run test",
+    "prepublishOnly": "npm run build-md-doc && npm run build-wasm && npm run rebuild && npm run test",
     "build": "echo Using TypeScript && tsc -v && tsc -p .",
     "build-watch": "echo Using TypeScript && tsc -v && tsc -w -p .",
     "build-wasm": "./utils/build-wasm.sh",
+    "build-md-doc": "./utils/generate-api-docs-md.sh",
     "rebuild": "npm run clean && npm run lint && npm run build",
     "test": "node --enable-source-maps --test --experimental-test-coverage lib/*.test.js",
     "clean": "rm -rf lib examples",

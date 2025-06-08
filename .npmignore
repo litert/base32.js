@@ -6,7 +6,7 @@
 /.npmignore
 /tsconfig.json
 /tslint.json
-/docs/
+/docs/website/
 /examples/
 /tests/
 /commitlint.config.js
@@ -20,5 +20,7 @@
 *.test.ts
 *.test.js
 *.test.d.ts
-*.map
+*.test.js.map
+*.test.d.ts.map
 *.wat
+typedoc-sidebar.json
