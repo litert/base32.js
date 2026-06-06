@@ -13,7 +13,7 @@ npm i @litert/base32 --save
 The default export is the WebAssembly implementation, which is faster than the JavaScript implementation.
 
 ```ts
-import * as Base32 from "@litert/base32";
+import * as Base32 from "@litert/base32"; // or import * as Base32 from "@litert/base32/wasm";
 
 const b32 = Base32.stringToBase32('Hello, 世界!');
 
@@ -29,7 +29,7 @@ console.log('Base32 Decoded:', decoded);
 If you want to use the JavaScript implementation, you can import it directly:
 
 ```ts
-import * as Base32 from "@litert/base32/lib/base32-js";
+import * as Base32 from "@litert/base32/js";
 
 const b32 = Base32.stringToBase32('Hello, 世界!');
 console.log('Base32 Encoded:', b32);

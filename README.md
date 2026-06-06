@@ -22,7 +22,7 @@ Use the library in Node.js like this:
 > The default export is the WebAssembly implementation.
 
 ```ts
-import * as Base32 from "@litert/base32";
+import * as Base32 from "@litert/base32"; // or use `@litert/base32/js` for pure JavaScript implementation
 
 const b32 = Base32.stringToBase32('Hello, 世界!');
 
