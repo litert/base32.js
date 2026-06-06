@@ -5,6 +5,26 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "default": {
+        "types": "./lib/base32-wasm.d.ts",
+        "default": "./lib/base32-wasm.js"
+      }
+    },
+    "./wasm": {
+      "default": {
+        "types": "./lib/base32-wasm.d.ts",
+        "default": "./lib/base32-wasm.js"
+      }
+    },
+    "./js": {
+      "default": {
+        "types": "./lib/base32-js.d.ts",
+        "default": "./lib/base32-js.js"
+      }
+    }
+  },
   "scripts": {
     "prepublishOnly": "npm run build-md-doc && npm run rebuild && npm run test",
     "build": "echo Using TypeScript && npm run build-wasm && tsc -v && tsc -p .",
