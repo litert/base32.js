@@ -1,6 +1,6 @@
 {
   "name": "@litert/base32",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "The encoding and decoding library for BASE32, in JavaScript/TypeScript/WebAssembly.",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
