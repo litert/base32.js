@@ -1,5 +1,5 @@
-import * as Base32 from '../lib';
-import * as Base32Js from "../lib/base32-js";
+import * as Base32 from '../lib/index.js';
+import * as Base32Js from "../lib/base32-js.js";
 
 (() => {
 

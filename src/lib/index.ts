@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-export * from './base32-wasm';
+export * from './base32-wasm.js';

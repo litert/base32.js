@@ -50,7 +50,7 @@ class WasmBase32Encoder {
 
     public constructor() {
 
-        wasmModule ??= new WebAssembly.Module(NodeFS.readFileSync(`${__dirname}/../wasm/base32.wasm`));
+        wasmModule ??= new WebAssembly.Module(NodeFS.readFileSync(`${import.meta.dirname}/../wasm/base32.wasm`));
 
         this._wasmInst = new WebAssembly.Instance(wasmModule, {});
 

@@ -2,7 +2,7 @@ import * as NodeFS from 'node:fs';
 import * as NodeCrypto from 'node:crypto';
 import * as NodeTest from 'node:test';
 import * as NodeAssert from 'node:assert';
-import * as WasmEnc from './base32-wasm';
+import * as WasmEnc from './base32-wasm.js';
 
 const stringTestCases: Array<[string, string]> = [
     ['1', 'GE======'],
