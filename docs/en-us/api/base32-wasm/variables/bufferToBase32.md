@@ -1,6 +1,6 @@
 [Documents for @litert/base32](../../index.md) / [base32-wasm](../index.md) / bufferToBase32
 
-# Variable: bufferToBase32()
+# Variable: bufferToBase32
 
 > `const` **bufferToBase32**: (`data`) => `string`
 

@@ -1,6 +1,6 @@
 [Documents for @litert/base32](../../index.md) / [base32-wasm](../index.md) / stringFromBase32
 
-# Variable: stringFromBase32()
+# Variable: stringFromBase32
 
 > `const` **stringFromBase32**: (`data`) => `string`
 
