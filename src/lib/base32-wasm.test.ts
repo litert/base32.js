@@ -79,7 +79,7 @@ NodeTest.describe('WebAssembly Edition', async () => {
     NodeTest.it('should encode and decode test data correctly', () => {
 
         const bufferTestCases: Array<Record<'base64url' | 'base32', string>> = JSON.parse(
-            NodeFS.readFileSync(`${__dirname}/../test-data/base32.json`, 'utf8')
+            NodeFS.readFileSync(`${import.meta.dirname}/../test-data/base32.json`, 'utf8')
         );
 
         for (const { base64url, base32 } of bufferTestCases) {
